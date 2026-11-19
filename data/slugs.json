@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Burpy",
+    "element": "Fuego",
+    "description": "La leal babosa Infurnus de Eli Shane. Al transformarse, se convierte en una poderosa criatura de fuego.",
+    "emoji": "🔥",
+    "color": "#ff744d",
+    "stats": { "experiencia": 78, "poder": 92, "agilidad": 74, "velocidad": 81, "fuerza": 88, "inteligencia": 82 }
+  },
+  {
+    "title": "Joules",
+    "element": "Energía",
+    "description": "Una Electroshock capaz de liberar potentes descargas eléctricas y ayudar al equipo de Shane.",
+    "emoji": "⚡",
+    "color": "#f4ce56",
+    "stats": { "experiencia": 66, "poder": 88, "agilidad": 83, "velocidad": 86, "fuerza": 68, "inteligencia": 91 }
+  },
+  {
+    "title": "Frostcrawler",
+    "element": "Hielo",
+    "description": "Babosa de hielo que congela su entorno y puede cubrir a sus oponentes con una capa helada.",
+    "emoji": "❄️",
+    "color": "#73d9e8",
+    "stats": { "experiencia": 70, "poder": 84, "agilidad": 72, "velocidad": 77, "fuerza": 80, "inteligencia": 78 }
+  },
+  {
+    "title": "Tormato",
+    "element": "Aire",
+    "description": "Una babosa de viento que crea tornados y ráfagas capaces de desestabilizar a sus rivales.",
+    "emoji": "🌪️",
+    "color": "#a7e58c",
+    "stats": { "experiencia": 61, "poder": 79, "agilidad": 92, "velocidad": 95, "fuerza": 62, "inteligencia": 76 }
+  },
+  {
+    "title": "Dirt Urchin",
+    "element": "Tierra",
+    "description": "Babosa terrestre que se enrolla y rueda como un proyectil, golpeando con gran fuerza.",
+    "emoji": "🪨",
+    "color": "#d2a16e",
+    "stats": { "experiencia": 58, "poder": 76, "agilidad": 65, "velocidad": 78, "fuerza": 91, "inteligencia": 60 }
+  },
+  {
+    "title": "Bubbaleone",
+    "element": "Agua",
+    "description": "Una babosa de agua que lanza burbujas pegajosas para atrapar o frenar a sus oponentes.",
+    "emoji": "🫧",
+    "color": "#68b9f4",
+    "stats": { "experiencia": 54, "poder": 67, "agilidad": 80, "velocidad": 73, "fuerza": 57, "inteligencia": 84 }
+  },
+  {
+    "title": "Banger",
+    "element": "Impacto",
+    "description": "Una babosa explosiva que golpea con fuerza y provoca una potente onda de impacto.",
+    "emoji": "💥",
+    "color": "#f2a64e",
+    "stats": { "experiencia": 49, "poder": 84, "agilidad": 71, "velocidad": 76, "fuerza": 89, "inteligencia": 58 }
+  },
+  {
+    "title": "Bludgeon",
+    "element": "Impacto",
+    "description": "Babosa de gran potencia física, ideal para abrirse paso con ataques contundentes.",
+    "emoji": "🔨",
+    "color": "#de8a65",
+    "stats": { "experiencia": 52, "poder": 82, "agilidad": 63, "velocidad": 69, "fuerza": 94, "inteligencia": 55 }
+  },
+  {
+    "title": "Beeker",
+    "element": "Tierra",
+    "description": "Pequeña babosa resistente que usa su forma y su impulso para embestir al rival.",
+    "emoji": "🟤",
+    "color": "#bd9b78",
+    "stats": { "experiencia": 42, "poder": 63, "agilidad": 72, "velocidad": 74, "fuerza": 70, "inteligencia": 62 }
+  },
+  {
+    "title": "Bluster",
+    "element": "Aire",
+    "description": "Una babosa veloz que aprovecha las corrientes de aire para empujar y desorientar.",
+    "emoji": "💨",
+    "color": "#95d4ad",
+    "stats": { "experiencia": 46, "poder": 68, "agilidad": 86, "velocidad": 89, "fuerza": 58, "inteligencia": 70 }
+  },
+  {
+    "title": "Beau",
+    "element": "Energía",
+    "description": "Babosa de energía con una personalidad única; sus habilidades la hacen valiosa en el campo.",
+    "emoji": "✨",
+    "color": "#d2a0f4",
+    "stats": { "experiencia": 57, "poder": 73, "agilidad": 78, "velocidad": 82, "fuerza": 64, "inteligencia": 87 }
+  }
+]

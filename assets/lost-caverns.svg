@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="960" y1="0" x2="960" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#132738"/>
+      <stop offset=".46" stop-color="#1A3041"/>
+      <stop offset="1" stop-color="#142132"/>
+    </linearGradient>
+    <linearGradient id="horizon" x1="960" y1="250" x2="960" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#477276" stop-opacity=".5"/>
+      <stop offset=".58" stop-color="#29485B" stop-opacity=".65"/>
+      <stop offset="1" stop-color="#172638"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="880" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34445A"/>
+      <stop offset=".42" stop-color="#243449"/>
+      <stop offset="1" stop-color="#172434"/>
+    </linearGradient>
+    <linearGradient id="foreground" x1="960" y1="700" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#26384A"/>
+      <stop offset="1" stop-color="#101A27"/>
+    </linearGradient>
+    <linearGradient id="water" x1="960" y1="790" x2="960" y2="1058" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31D6C6" stop-opacity=".42"/>
+      <stop offset=".3" stop-color="#1C8796" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#123448" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="cyanCrystal" x1="0" y1="0" x2="104" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C8FFF4"/>
+      <stop offset=".34" stop-color="#58E7DB"/>
+      <stop offset="1" stop-color="#228C9D"/>
+    </linearGradient>
+    <linearGradient id="violetCrystal" x1="0" y1="0" x2="96" y2="228" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D2FF"/>
+      <stop offset=".4" stop-color="#BB77F5"/>
+      <stop offset="1" stop-color="#604A9B"/>
+    </linearGradient>
+    <linearGradient id="greenCrystal" x1="0" y1="0" x2="80" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9FFB7"/>
+      <stop offset=".38" stop-color="#A4E846"/>
+      <stop offset="1" stop-color="#4F925F"/>
+    </linearGradient>
+    <radialGradient id="cavernLight" cx="0" cy="0" r="1" gradientTransform="matrix(0 508 -780 0 974 393)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AE8D7" stop-opacity=".34"/>
+      <stop offset=".43" stop-color="#55B8C5" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#31D6C6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="crystalGlow" cx="0" cy="0" r="1" gradientTransform="matrix(0 182 -182 0 136 723)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#31D6C6" stop-opacity=".44"/>
+      <stop offset="1" stop-color="#31D6C6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="purpleGlow" cx="0" cy="0" r="1" gradientTransform="matrix(0 200 -200 0 1772 727)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#B76BFF" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#B76BFF" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="blur" x="-80" y="-80" width="260" height="300" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+    <filter id="softBlur" x="0" y="0" width="1920" height="1080" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    <pattern id="stoneGrain" width="112" height="90" patternUnits="userSpaceOnUse">
+      <path d="M5 24 31 16M74 68l24-12M39 83l14-5M91 13l11-3" stroke="#9AAEC1" stroke-opacity=".09" stroke-width="2"/>
+      <circle cx="55" cy="38" r="1.5" fill="#B4C4D0" fill-opacity=".12"/>
+      <circle cx="17" cy="70" r="1" fill="#B4C4D0" fill-opacity=".13"/>
+    </pattern>
+  </defs>
+
+  <path fill="url(#sky)" d="M0 0h1920v1080H0z"/>
+  <path fill="url(#cavernLight)" d="M0 0h1920v1080H0z"/>
+
+  <g opacity=".63" fill="#26394A">
+    <path d="m0 391 74-44 74 40 77-89 97 60 81-75 81 89 91-116 103 77 84-74 98 82 114-118 90 84 106-53 93 73 93-112 88 64 79-46 93 71 106-88 97 53v302H0z"/>
+    <path d="m0 469 126-67 84 38 92-80 120 62 99-74 83 63 107-67 103 66 84-82 104 70 95-58 104 72 101-83 111 63 93-71 108 56v305H0z" fill="#314657"/>
+  </g>
+  <path fill="url(#horizon)" d="M0 512c169-58 321-70 488-23 169 48 271 29 416-17 159-51 258-61 408-6 194 71 348 56 608-12v490H0z"/>
+
+  <g opacity=".72">
+    <path d="m1015 294 24-76 25 76v210h-49z" fill="url(#cyanCrystal)"/>
+    <path d="m1064 372 16-58 18 58v159h-34z" fill="url(#violetCrystal)"/>
+    <path d="m855 400 20-84 23 84v150h-43z" fill="url(#greenCrystal)"/>
+    <path d="m744 460 15-54 18 54v110h-33z" fill="url(#cyanCrystal)"/>
+    <path d="m1193 437 14-50 18 50v133h-32z" fill="url(#greenCrystal)"/>
+  </g>
+
+  <g opacity=".94">
+    <path d="M0 0h1920v193l-118-40-95 76-128-109-106 72-92-83-112 104-117-68-104 91-97-101-126 90-103-120-105 90-108-71-107 108-111-87-115 92L0 189z" fill="#121E2D"/>
+    <path d="m0 185 144-33 113 51 115-75 107 69 102-50 97 47 112-71 118 68 111-47 99 72 124-83 123 67 106-50 109 64 100-53 140 65v167H0z" fill="#182737"/>
+    <path d="M0 263c176-40 292 21 431-8 131-28 226-82 364-55 129 25 214 8 327-30 128-43 224-25 339 14 178 61 305 1 459 39v141H0z" fill="url(#horizon)" opacity=".55"/>
+  </g>
+
+  <path d="M0 574c135-72 227-55 344-7 121 50 177 19 261-40 93-65 172-60 267-9 102 55 194 47 293-4 115-59 206-58 320 5 113 62 215 27 293-10 55-26 99-27 142-18v276H0z" fill="#203345"/>
+  <path d="M0 630c118-49 215-43 302 13 114 74 195 80 294 9 109-77 186-100 296-40 100 56 196 80 325 14 130-66 223-69 346-7 113 57 224 56 357-1v309H0z" fill="#284254" opacity=".8"/>
+  <path d="M0 676c107-63 203-47 295 30 88 73 158 93 238 44 112-67 172-91 295-40 110 46 192 84 318 17 130-69 221-72 327-18 126 64 242 59 447-9v380H0z" fill="#23374A"/>
+
+  <g opacity=".68" filter="url(#softBlur)" fill="#31D6C6">
+    <ellipse cx="145" cy="759" rx="114" ry="92"/>
+    <ellipse cx="1771" cy="757" rx="126" ry="95"/>
+  </g>
+  <ellipse cx="136" cy="728" rx="205" ry="170" fill="url(#crystalGlow)"/>
+  <ellipse cx="1772" cy="722" rx="224" ry="190" fill="url(#purpleGlow)"/>
+
+  <g>
+    <path d="m46 865 27-310 33 206 30-276 43 314 40-208 18 274z" fill="url(#cyanCrystal)"/>
+    <path d="m77 695 29 66-29 88 32-87z" fill="#D9FFF5" fill-opacity=".74"/>
+    <path d="m160 724 35 89-35 92 44-93z" fill="#C5FFF2" fill-opacity=".52"/>
+    <path d="m210 888 22-225 30 162 25-274 43 337z" fill="url(#violetCrystal)"/>
+    <path d="m264 713 28 88-28 88 36-87z" fill="#F4E0FF" fill-opacity=".65"/>
+    <path d="m1578 892 36-303 36 221 30-270 52 357 31-212 45 255z" fill="url(#violetCrystal)"/>
+    <path d="m1650 709 38 85-38 119 48-120z" fill="#F5E0FF" fill-opacity=".66"/>
+    <path d="m1766 879 26-239 31 171 38-285 41 353z" fill="url(#cyanCrystal)"/>
+    <path d="m1823 676 28 91-28 103 37-104z" fill="#D8FFF4" fill-opacity=".63"/>
+  </g>
+
+  <g fill="#203A36">
+    <path d="M361 803c-7-84-30-117-67-153 57 21 89 73 91 135 12-74 49-126 103-151-41 47-59 106-51 176-31-26-55-30-76-7z"/>
+    <path d="M465 846c5-72-9-112-49-151 50 20 80 65 84 120 12-66 42-105 93-127-42 44-53 92-41 158-32-21-60-21-87 0z"/>
+    <path d="M1334 828c10-88 42-134 99-164-43 50-56 103-43 163-31-22-65-20-94 1z"/>
+    <path d="M1434 864c-3-69 16-115 62-152-23 45-27 96-13 147-21-18-35-16-49 5z"/>
+  </g>
+  <g fill="#A4E846">
+    <ellipse cx="384" cy="784" rx="5" ry="12" transform="rotate(-35 384 784)"/>
+    <ellipse cx="404" cy="789" rx="5" ry="12" transform="rotate(32 404 789)"/>
+    <ellipse cx="523" cy="819" rx="5" ry="12" transform="rotate(-35 523 819)"/>
+    <ellipse cx="543" cy="820" rx="5" ry="12" transform="rotate(32 543 820)"/>
+    <ellipse cx="1374" cy="790" rx="5" ry="13" transform="rotate(-35 1374 790)"/>
+    <ellipse cx="1396" cy="788" rx="5" ry="13" transform="rotate(32 1396 788)"/>
+  </g>
+
+  <path d="M0 842c187-52 333-22 474 42 152 69 291 74 436 4 131-63 227-54 347 5 141 69 320 44 434 5 84-29 162-28 229 1v181H0z" fill="url(#foreground)"/>
+  <path d="M611 881c95-47 181-49 280-13 114 41 173 51 267 11 86-37 160-40 242-12l215 80H335z" fill="url(#water)"/>
+  <path d="M985 846v112l24 17V841z" fill="#9DF5EB" fill-opacity=".55"/>
+  <path d="M1009 956c25 15 47 24 78 31m-219-18 42 18m284-39 49 18" stroke="#A8F8EA" stroke-opacity=".46" stroke-width="4" stroke-linecap="round"/>
+  <path d="M825 906c104 34 194 49 281 29 56-13 102-37 168-40" stroke="#77E7DE" stroke-opacity=".22" stroke-width="2"/>
+
+  <g>
+    <path d="M672 917c0-22 17-39 39-39s39 17 39 39" fill="#B76BFF"/>
+    <path d="M662 918h98c-5 12-25 19-49 19s-44-7-49-19z" fill="#7658AE"/>
+    <path d="M758 945c0-18 14-32 32-32s32 14 32 32" fill="#A4E846"/>
+    <path d="M748 946h83c-5 10-22 16-42 16s-36-6-41-16z" fill="#628C53"/>
+    <path d="M1256 929c0-24 18-42 42-42s42 18 42 42" fill="#31D6C6"/>
+    <path d="M1245 930h106c-6 13-27 20-53 20s-47-7-53-20z" fill="#397E85"/>
+    <path d="M1339 962c0-17 13-30 30-30s30 13 30 30" fill="#FF8B43"/>
+    <path d="M1329 963h80c-5 10-22 16-40 16s-35-6-40-16z" fill="#9C664D"/>
+  </g>
+
+  <g fill="#BFF8EE">
+    <circle cx="289" cy="314" r="3" fill-opacity=".72"/>
+    <circle cx="415" cy="465" r="2" fill-opacity=".58"/>
+    <circle cx="643" cy="255" r="2.5" fill-opacity=".48"/>
+    <circle cx="793" cy="384" r="3" fill-opacity=".52"/>
+    <circle cx="1176" cy="282" r="2" fill-opacity=".6"/>
+    <circle cx="1372" cy="455" r="3" fill-opacity=".5"/>
+    <circle cx="1517" cy="352" r="2" fill-opacity=".58"/>
+    <circle cx="1195" cy="622" r="2" fill-opacity=".6"/>
+    <circle cx="600" cy="679" r="2" fill-opacity=".45"/>
+    <circle cx="997" cy="573" r="2.5" fill-opacity=".5"/>
+    <circle cx="1474" cy="623" r="2" fill-opacity=".48"/>
+  </g>
+
+  <path d="M0 0h1920v1080H0z" fill="url(#stoneGrain)" opacity=".32"/>
+  <path d="M0 0h1920v1080H0z" fill="url(#sky)" opacity=".13"/>
+  <path d="M0 0h1920v1080H0z" fill="url(#horizon)" opacity=".08"/>
+</svg>

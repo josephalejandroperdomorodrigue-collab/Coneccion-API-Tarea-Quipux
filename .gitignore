@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.env
+.env.*
+!.env.example
+node_modules/
+dist/
+coverage/
+*.log
+cavern-preview.png

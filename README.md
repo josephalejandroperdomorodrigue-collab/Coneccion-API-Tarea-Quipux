@@ -10,7 +10,7 @@ Abre la carpeta en VS Code y arranca un servidor local desde la terminal:
 python -m http.server 5500
 ```
 
-Visita `http://localhost:5500`. También puedes usar la extensión Live Server. No abras `index.html` directamente como archivo: los módulos ES y la carga del JSON requieren un servidor HTTP.
+Visita `http://127.0.0.1:5500/`. También puedes usar la extensión Live Server. No abras `index.html` directamente como archivo: los módulos ES y la carga del JSON requieren un servidor HTTP.
 
 ## Cómo funciona
 

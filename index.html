@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101722" />
+    <meta
+      name="description"
+      content="Slugpedia: explora la enciclopedia de babosas de Bajoterra y pon a prueba tu memoria."
+    />
+    <title>Slugpedia — Enciclopedia de babosas</title>
+    <link rel="preconnect" href="https://slugterra.fandom.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      window.tailwind = { config: { corePlugins: { preflight: false }, theme: { extend: { colors: {
+        cavern: "#101722", stone: "#1D2A3A", crystal: "#31D6C6", toxic: "#A4E846",
+        mystic: "#B76BFF", ember: "#FF8B43"
+      } } } } };
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script type="module" src="./src/main.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Slugpedia, inicio">
+        <span class="brand-mark" aria-hidden="true">S</span>
+        <span>SLUGPEDIA<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <button class="nav-link is-active" data-view="home" type="button">Inicio</button>
+        <button class="nav-link" data-view="catalog" type="button">Slugpedia</button>
+        <button class="nav-link" data-view="game" type="button">Memory Slugs</button>
+      </nav>
+      <span class="nav-coordinate" aria-hidden="true">99 CAVERNAS</span>
+    </header>
+
+    <main class="relative isolate">
+      <section class="view is-visible" id="home-view" aria-labelledby="hero-title">
+        <div class="hero">
+          <img class="hero-background" src="./assets/lost-caverns.svg" alt="" fetchpriority="high" />
+          <div class="hero-atmosphere" aria-hidden="true">
+            <span class="ambient-particle particle-one"></span>
+            <span class="ambient-particle particle-two"></span>
+            <span class="ambient-particle particle-three"></span>
+            <span class="ambient-particle particle-four"></span>
+            <span class="ambient-particle particle-five"></span>
+          </div>
+          <div class="hero-copy">
+            <div class="hero-wordmark">
+              <span class="brand-mark" aria-hidden="true">S</span>
+              <span>SLUGPEDIA<span class="brand-dot">.</span></span>
+            </div>
+            <p class="eyebrow"><span class="status-dot"></span> REGISTRO DE EXPLORACIÓN · 99 CAVERNAS</p>
+            <h1 id="hero-title">Explora un mundo<br />que nunca imaginaste<br /><span>bajo tus pies.</span></h1>
+            <p class="hero-description">
+              Cristales antiguos, ríos escondidos y criaturas extraordinarias. Tu aventura empieza bajo tierra.
+            </p>
+            <div class="hero-actions flex flex-wrap items-center gap-3">
+              <button class="button button-primary hero-button" data-view="catalog" type="button">
+                <span class="button-icon" aria-hidden="true">⌕</span>
+                <span>Explorar babosas<small>ABRIR EL BESTIARIO</small></span>
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </button>
+              <button class="button button-secondary hero-button" data-view="game" type="button">
+                <span class="button-icon" aria-hidden="true">◇</span>
+                <span>Jugar Memory Slugs<small>ENCONTRAR LAS PAREJAS</small></span>
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+          <div class="hero-bottom">
+            <span><i class="signal-line"></i> SEÑAL DE ENERGÍA SLUG DETECTADA</span>
+            <span>COORDENADAS 99C · PROFUNDIDAD DESCONOCIDA</span>
+          </div>
+        </div>
+        <section class="home-discovery section-wrap" aria-label="Registro de exploración">
+          <div class="discovery-caption">
+            <span class="eyebrow">MÁS ALLÁ DE LA ENTRADA</span>
+            <p>Un ecosistema entero aguarda en la oscuridad.</p>
+          </div>
+          <button class="discovery-link" type="button" data-view="catalog">
+            <span class="discovery-glyph" aria-hidden="true">✦</span>
+            <span><strong id="discovery-count">—</strong><small>ESPECIES REGISTRADAS</small></span>
+            <span aria-hidden="true">↗</span>
+          </button>
+        </section>
+      </section>
+
+      <section class="view encyclopedia-view" id="catalog-view" aria-labelledby="explorer-title" hidden>
+        <div class="encyclopedia-backdrop" aria-hidden="true"></div>
+        <section class="explorer section-wrap" id="explorer">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span class="status-dot"></span> ARCHIVO DE EXPLORACIÓN · ZONA 99C</p>
+              <h1 id="explorer-title">Bestiario <span>Slugpedia</span></h1>
+              <p class="section-intro">Cada señal revela una nueva especie del mundo subterráneo.</p>
+            </div>
+            <p class="catalog-count"><span id="catalog-count">Conectando con la wiki…</span><small>REGISTROS ACTIVOS</small></p>
+          </div>
+          <div class="toolbar">
+            <label class="search-box">
+              <span aria-hidden="true">⌕</span>
+              <input id="search-input" type="search" placeholder="Buscar por nombre…" autocomplete="off" aria-label="Buscar babosas por nombre" />
+              <kbd>/</kbd>
+            </label>
+            <label class="filter-label" for="element-filter">Filtrar por elemento</label>
+            <select id="element-filter" aria-label="Filtrar por elemento">
+              <option value="all">Todos los elementos</option>
+            </select>
+          </div>
+          <div class="notice" id="api-notice" role="status" hidden></div>
+          <div class="slug-grid" id="slug-grid" aria-live="polite"></div>
+          <p class="empty-state" id="empty-state" hidden>No encontramos babosas con esa búsqueda.</p>
+          <dialog class="detail-dialog" id="detail-dialog" aria-label="Ficha de babosa">
+            <button class="detail-close" id="detail-close" type="button" aria-label="Cerrar ficha">×<span>ESC</span></button>
+            <div class="detail-panel" id="detail-panel" aria-live="polite"></div>
+          </dialog>
+        </section>
+      </section>
+
+      <section class="view game-view" id="game-view" aria-labelledby="game-title" hidden>
+        <div class="game-intro">
+          <p class="eyebrow"><span class="status-dot"></span> CÁMARA DE RESONANCIA · DESAFÍO 01</p>
+          <h1 id="game-title">Memory <span>Slugs</span></h1>
+          <p>Sincroniza los cristales. Encuentra las seis parejas ocultas en la caverna.</p>
+        </div>
+        <div class="game-bar">
+          <div class="game-stat"><span class="stat-label">MOVIMIENTOS</span><strong id="moves-count">00</strong></div>
+          <div class="game-stat"><span class="stat-label">CRISTALES</span><strong id="pairs-count">00 <small>/ 06</small></strong></div>
+          <div class="game-stat"><span class="stat-label">TIEMPO DE MISIÓN</span><strong id="timer-count">00:00</strong></div>
+          <button class="button button-secondary" id="restart-button" type="button">Reiniciar misión <span aria-hidden="true">↻</span></button>
+        </div>
+        <p class="game-message" id="game-message" role="status" aria-live="polite">La caverna aguarda. Encuentra las parejas.</p>
+        <div class="memory-grid" id="memory-grid" aria-label="Tablero del memorama"></div>
+        <div class="victory-panel" id="victory-panel" hidden role="status">
+          <span class="victory-crystal" aria-hidden="true">✦</span>
+          <p class="eyebrow">MISIÓN COMPLETADA · CÁMARA SINCRONIZADA</p>
+          <h2>¡La caverna <span>despierta!</span></h2>
+          <p id="victory-summary"></p>
+          <button class="button button-primary" id="victory-restart" type="button">Explorar de nuevo <span aria-hidden="true">↻</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>SLUGPEDIA<span class="brand-dot">.</span> ARCHIVO DE EXPLORACIÓN NO OFICIAL</span>
+      <a href="https://slugterra.fandom.com/wiki/Slugs" target="_blank" rel="noreferrer">DATOS E ILUSTRACIONES DE SLUGTERRA WIKI ↗</a>
+    </footer>
+  </body>
+</html>
